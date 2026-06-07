@@ -4,41 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
+    <title>Curriculum Vitae - Bryan Rivas</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <div style="padding: 15px;">
-        <div style="background-color: rgb(57, 135, 75);padding: 15px; display: flex; margin: auto; height: 700px;">
-            <img src="./assets/imagenes/eldui.webp" alt="elduipo"
-                style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-top: 10px; margin-left: 9px;"</div>
-            <div
-                style="padding: 15px;background-color: rgb(53, 153, 76); width: 4000px; margin-left: 70px; border-radius: 30px;">
-                <div style="padding: 15px;width: 70%;">
-                    <h1 style="font-size: 50px;">Bryan Alexander Rivas Rainahuel</h1>
-                    <p style="font-size: 30px;">Estudiante de Analista Programador</p>
-                    <div style="background-color: aliceblue; padding: 15px;display: flex;">
-                        <div style="background-color: blanchedalmond;padding: 15px;width: 30%;">
-                            Estudiante de Analista Programador, con conocimientos en MySql, Python, HTML, Bootstrap, Git y Windows.
-                            <br><br>
-                            Hablididades blandas: trabajo en equipo, comunicación efectiva, resolución de problemas y
-                            adaptabilidad.
-                        </div>
-                        <div style="background-color: cadetblue;padding: 15px;width: 70%;">
-                            Estudiante de segundo año de Analista Programador, con experiencia en proyectos académicos y
-                            personales usando tecnologías como MySql, Python, HTML, Bootstrap, Git y Windows. <br><br>
-                            Busco oportunidades para aplicar mis conocimientos y seguir aprendiendo en el campo de la
-                            programación.
-                        </div>
+
+    <div class="contenedor-cv">
+        
+        <aside class="columna-izquierda">
+            <img src="./assets/imagenes/eldui.webp" alt="Foto de perfil CV" class="foto-perfil">
+            
+            <div class="bloque-identidad">
+                <h1 class="nombre-usuario">Bryan Alexander<br>Rivas Rainahuel</h1>
+                <p class="profesion-usuario">Estudiante de Analista Programador</p>
+            </div>
+            
+            <section class="seccion-sidebar">
+                <h2>Habilidades Técnicas</h2>
+                <ul class="lista-habilidades">
+                    <li>MySQL</li>
+                    <li>Python</li>
+                    <li>HTML5 & CSS3</li>
+                    <li>Bootstrap</li>
+                    <li>Git / GitHub</li>
+                    <li>Windows</li>
+                </ul>
+            </section>
+            
+            <section class="seccion-sidebar">
+                <h2>Habilidades Blandas</h2>
+                <ul class="lista-habilidades">
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Resolución de problemas</li>
+                    <li>Adaptabilidad</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="columna-derecha">
+            
+            <section class="seccion-principal">
+                <h2>Perfil Profesional</h2>
+                <p>
+                    Estudiante de segundo año de Analista Programador, con alta motivación por el desarrollo de software y la gestión de bases de datos. Cuenta con experiencia en proyectos académicos aplicando metodologías ordenadas y control de versiones. Busco oportunidades desafiantes para aplicar mis conocimientos y seguir creciendo en el campo de la programación.
+                </p>
+            </section>
+            
+            <section class="seccion-principal">
+                <h2>Educación</h2>
+                
+                <div class="tarjeta-trayectoria">
+                    <div class="linea-superior">
+                        <h3>Analista Programador</h3>
+                        <span class="etiqueta-fecha">2025 - Presente</span>
                     </div>
+                    <p class="subtitulo-institucion">Inacap</p>
+                    <p class="texto-descripcion">
+                        Cursando segundo año. Enfoque especializado en desarrollo de software, modelamiento de bases de datos relacionales, arquitectura web y resolución de problemas de lógica matemática.
+                    </p>
                 </div>
-            </div>
-            <div </div>
+            </section>
 
-            </div>
+            <section class="seccion-principal">
+                <h2>Proyectos Destacados</h2>
+                
+                <div class="tarjeta-trayectoria">
+                    <div class="linea-superior">
+                        <h3>Desarrollo de Plataforma CV Web</h3>
+                        <span class="etiqueta-fecha">Junio 2026</span>
+                    </div>
+                    <p class="subtitulo-institucion">Proyecto Académico</p>
+                    <p class="texto-descripcion">
+                        Maquetación, diseño y estructuración de un currículum responsivo utilizando tecnologías Frontend estándar (HTML5, CSS3) y optimización de arquitectura de componentes independientes.
+                    </p>
+                </div>
+            </section>
+            
+        </main>
 
-
+    </div>
 
 </body>
-
 </html>

@@ -1,1 +1,160 @@
-/*Aqui van los estilos CSS para la pagina web, se pueden agregar mas estilos a medida que se necesiten*/
+/* ==========================================================================
+Archivo CSS donde se guardan los estilos de la página de currículum vitae.
+Trabajar con un archivo CSS es una buena práctica para mantener el código HTML limpio y organizado,
+además de facilitar la gestión de estilos.
+   ========================================================================== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9; /* Fondo gris claro sutil */
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 2. CONTENEDOR PRINCIPAL (Une las dos columnas) */
+.contenedor-cv {
+    display: flex;
+    max-width: 1050px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* 3. COLUMNA IZQUIERDA (Barra lateral verde) */
+.columna-izquierda {
+    width: 35%;
+    background-color: rgb(43, 114, 60); /* Tu verde corporativo */
+    color: #ffffff;
+    padding: 40px 30px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 25px auto;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.bloque-identidad {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.nombre-usuario {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.profesion-usuario {
+    font-size: 15px;
+    color: #e0e0e0;
+    font-weight: 400;
+}
+
+.seccion-sidebar {
+    margin-bottom: 35px;
+}
+
+.seccion-sidebar h2 {
+    font-size: 16px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lista-habilidades {
+    list-style: none;
+}
+
+.lista-habilidades li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* Viñeta personalizada blanca para la barra verde */
+.lista-habilidades li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* 4. COLUMNA DERECHA (Contenido Principal) */
+main {
+    width: 65%;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.seccion-principal {
+    margin-bottom: 35px;
+}
+
+.seccion-principal h2 {
+    font-size: 20px;
+    color: rgb(43, 114, 60);
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Tarjetas de Experiencia / Educación */
+.tarjeta-trayectoria {
+    margin-bottom: 25px;
+}
+
+.linea-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.linea-superior h3 {
+    font-size: 17px;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.etiqueta-fecha {
+    font-size: 12px;
+    background-color: #e8f5e9;
+    color: rgb(43, 114, 60);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.subtitulo-institucion {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.texto-descripcion {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
