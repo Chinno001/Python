@@ -1,25 +1,31 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!--Este es el tipo de documento, HTML5-->
+<html lang="es"> <!--Atributo lang, lenguaje-->
 
-<head>
+<head> <!--Head o encabezado, aquí va todo lo que es definir metadatos sobre la página web, incluyendo el título, enlaces a hojas de estilo y scripts, que son esenciales para el funcionamiento y presentación del contenido-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Bryan Rivas</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Curriculum Vitae - Bryan Rivas</title>   <!-- Tittle muestra el titulo que se va a ver en la pestaña del navegador wb -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Aquí se enlaza mi archivo CSS para aplicar estilos a la página desde donde se trabajaran de ahora en adelante-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Aquí agregue el link a bootstrap para el uso de BOTONES -->
 </head>
 
-<body>
+<body> <!--Body, o contenido principal de la pag wb-->
+
+<!-- A continuación se crea el contenedor principal del cv con un <div> el cual me va a sostener todo el resto de los elementos, y definiendo también
+su clase como "contenedor-cv", las clases se crean para atribuir comportamientos, estilos etc
+y luego poder aplicarlos a los objetos u elementos que queremos que tengan ese comportamiento  -->
 
     <div class="contenedor-cv">
-        
-        <aside class="columna-izquierda">
-            <img src="./assets/imagenes/eldui.webp" alt="Foto de perfil CV" class="foto-perfil">
-            
+
+
+        <aside class="columna-izquierda"> <!-- aside es para contenido secundario o de navegación que se muestra como barras o bloques de información adicional a la principal de la pag wb-->
+            <img src="./assets/imagenes/eldui.webp" alt="Foto de perfil CV" class="foto-perfil"> <!--Etiqueta img para agregar una imagen-->
+
             <div class="bloque-identidad">
                 <h1 class="nombre-usuario">Bryan Alexander<br>Rivas Rainahuel</h1>
                 <p class="profesion-usuario">Estudiante de Analista Programador</p>
             </div>
-            
+
             <section class="seccion-sidebar">
                 <h2>Habilidades Técnicas</h2>
                 <ul class="lista-habilidades">
@@ -31,7 +37,7 @@
                     <li>Windows</li>
                 </ul>
             </section>
-            
+
             <section class="seccion-sidebar">
                 <h2>Habilidades Blandas</h2>
                 <ul class="lista-habilidades">
@@ -41,20 +47,33 @@
                     <li>Adaptabilidad</li>
                 </ul>
             </section>
+
+            <section class="seccion-sidebar">
+                <h2>Contacto</h2>
+                <ul class="lista-contacto">
+                    <li><i class="bi bi-envelope-fill"></i> bryan.rivas@email.com</li>
+                    <li><i class="bi bi-geo-alt-fill"></i> Temuco, Araucanía, Chile</li>
+                    <li><i class="bi bi-telephone-fill"></i> +56 9 1234 5678</li>
+                    <li><i class="bi bi-github"></i> Chinno001</li>
+                </ul>
+            </section>
         </aside>
 
         <main class="columna-derecha">
-            
+
             <section class="seccion-principal">
                 <h2>Perfil Profesional</h2>
                 <p>
-                    Estudiante de segundo año de Analista Programador, con alta motivación por el desarrollo de software y la gestión de bases de datos. Cuenta con experiencia en proyectos académicos aplicando metodologías ordenadas y control de versiones. Busco oportunidades desafiantes para aplicar mis conocimientos y seguir creciendo en el campo de la programación.
+                    Estudiante de segundo año de Analista Programador, con alta motivación por el desarrollo de software
+                    y la gestión de bases de datos. Cuenta con experiencia en proyectos académicos aplicando
+                    metodologías ordenadas y control de versiones. Busco oportunidades desafiantes para aplicar mis
+                    conocimientos y seguir creciendo en el campo de la programación.
                 </p>
             </section>
-            
+
             <section class="seccion-principal">
                 <h2>Educación</h2>
-                
+
                 <div class="tarjeta-trayectoria">
                     <div class="linea-superior">
                         <h3>Analista Programador</h3>
@@ -62,14 +81,15 @@
                     </div>
                     <p class="subtitulo-institucion">Inacap</p>
                     <p class="texto-descripcion">
-                        Cursando segundo año. Enfoque especializado en desarrollo de software, modelamiento de bases de datos relacionales, arquitectura web y resolución de problemas de lógica matemática.
+                        Cursando segundo año. Enfoque especializado en desarrollo de software, modelamiento de bases de
+                        datos relacionales, arquitectura web y resolución de problemas de lógica matemática.
                     </p>
                 </div>
             </section>
 
             <section class="seccion-principal">
                 <h2>Proyectos Destacados</h2>
-                
+
                 <div class="tarjeta-trayectoria">
                     <div class="linea-superior">
                         <h3>Desarrollo de Plataforma CV Web</h3>
@@ -77,14 +97,16 @@
                     </div>
                     <p class="subtitulo-institucion">Proyecto Académico</p>
                     <p class="texto-descripcion">
-                        Maquetación, diseño y estructuración de un currículum responsivo utilizando tecnologías Frontend estándar (HTML5, CSS3) y optimización de arquitectura de componentes independientes.
+                        Maquetación, diseño y estructuración de un currículum responsivo utilizando tecnologías Frontend
+                        estándar (HTML5, CSS3) y optimización de arquitectura de componentes independientes.
                     </p>
                 </div>
             </section>
-            
+
         </main>
 
     </div>
 
 </body>
+
 </html>

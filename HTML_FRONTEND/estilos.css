@@ -33,7 +33,7 @@ body {
 /* 3. COLUMNA IZQUIERDA (Barra lateral verde) */
 .columna-izquierda {
     width: 35%;
-    background-color: rgb(43, 114, 60); /* Tu verde corporativo */
+    background-color: rgb(69, 10, 10); /* Burdeo */
     color: #ffffff;
     padding: 40px 30px;
 }
@@ -111,7 +111,7 @@ main {
 
 .seccion-principal h2 {
     font-size: 20px;
-    color: rgb(43, 114, 60);
+    color: rgb(69, 10, 10);
     margin-bottom: 20px;
     border-bottom: 2px solid #f0f2f5;
     padding-bottom: 6px;
@@ -140,7 +140,7 @@ main {
 .etiqueta-fecha {
     font-size: 12px;
     background-color: #e8f5e9;
-    color: rgb(43, 114, 60);
+    color: rgb(69, 10, 10);
     padding: 4px 10px;
     border-radius: 12px;
     font-weight: 600;
@@ -157,4 +157,27 @@ main {
     font-size: 14px;
     color: #4a4a4a;
     line-height: 1.6;
+}
+
+
+
+.lista-contacto {
+    list-style: none; 
+
+.lista-contacto li {
+    font-size: 14px; 
+    margin-bottom: 12px; 
+    display: flex; 
+    align-items: center; 
+    color: #ffffff;}
+}
+
+
+.lista-contacto i, 
+.lista-contacto .icono {
+    margin-right: 10px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85); 
+    width: 20px; 
+    text-align: center; 
 }
