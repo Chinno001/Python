@@ -47,7 +47,7 @@
         </div>
         <br>
 
-        <form>
+        <form id="formularioRegistro">
             <div class="row">
                 <div class="col">
                     <label for="inputNombre" class="form-label">Nombre Completo:</label>
@@ -75,10 +75,10 @@
                 <div class="col">
                     <label for="selectGenero" class="form-label">Género:</label>
                     <select name="generoUsuario" id="selectGenero" class="form-select">
+                        <option value="" selected>Seleccione su opción</option>
                         <option value="M">Masculino</option>
                         <option value="F">Femenino</option>
                         <option value="O">Otro...</option>
-                        <option selected value="">Seleccione su opción</option>
                     </select>
                 </div>
             </div>
@@ -93,12 +93,11 @@
                 <div class="col-4">
                     <label for="selectNacionalidad" class="form-label">Nacionalidad:</label>
                     <select name="nacionalidadUsuario" id="selectNacionalidad" class="form-select">
+                        <option value="" selected>Seleccione su opción</option>
                         <option value="56">Chilena</option>
                         <option value="51">Peruana</option>
                         <option value="58">Venezolana</option>
                         <option value="591">Boliviana</option>
-                        <option selected value="">Seleccione su opción</option>
-
                     </select>
                 </div>
             </div>
@@ -127,7 +126,8 @@
 
             <div class="row">
                 <div class="col d-flex justify-content-end">
-                    <input type="reset" value="Cancelar" class="btn btn-secondary me-2">
+                    <!-- <input type="reset" value="Cancelar" class="btn btn-secondary me-2"> -->
+                    <button type="button" class="btn btn-secondary me-2" onclick="limpiarFormulario();">Cancelar</button>
                     <!-- <input type="submit" value="Enviar" class="btn btn-primary"> -->
                     <button type="button" class="btn btn-primary" onclick="validarFormulario();">Enviar</button>
                 </div>
